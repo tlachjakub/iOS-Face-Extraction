@@ -6,7 +6,7 @@
 //  Copyright © 2018 Jakub Tlach. All rights reserved.
 //
 
-import Foundation
+import AVFoundation
 import UIKit
 
 
@@ -20,8 +20,7 @@ class CameraView: UIView {
 	var retryTimer: RUTimer? = nil
 	var lastPredictionTime = Double.timeStamp
 	
-	
-	@IBOutlet weak var eyeView: EyeView!
+	@IBOutlet weak var faceView: FaceView!
 	
 	
 	
@@ -37,7 +36,7 @@ class CameraView: UIView {
 	
 	
 	// Skin Filter
-	var skinFilter: YUCIHighPassSkinSmoothing! = nil
+	//var skinFilter: YUCIHighPassSkinSmoothing! = nil
 	var context: CIContext! = nil
 	
 	
@@ -159,7 +158,7 @@ class CameraView: UIView {
 		let previewHeight = layer.bounds.height * zoom
 		if useSkinFilter {
 			context = CGImage.ruCreateContext(width: captureWidth, height: captureHeight)
-			skinFilter = YUCIHighPassSkinSmoothing()
+			//skinFilter = YUCIHighPassSkinSmoothing()
 			cameraLayer = CALayer()
 			cameraLayer.frame = CGRect(x: 0, y: layer.bounds.height - previewHeight, width: layer.bounds.width, height: previewHeight)
 			cameraLayer.contentsGravity = kCAGravityResizeAspectFill
@@ -172,7 +171,7 @@ class CameraView: UIView {
 		}
 		
 		// Init Eye
-		eyeView.initialize(width: captureWidth, height: captureHeight)
+		faceView.initialize(width: captureWidth, height: captureHeight)
 		
 		
 		// Start Session
@@ -223,28 +222,28 @@ extension CameraView : AVCaptureVideoDataOutputSampleBufferDelegate {
 		
 		
 		// Skin Filter
-		if useSkinFilter {
-			skinFilter.inputImage = inImage
-			skinFilter.inputAmount = 0.7.number				// Default = 0.75
-			skinFilter.inputRadius = 10.number				// Default = 8
-			skinFilter.inputSharpnessFactor = 0.0.number	// Default = 0.6
-			guard let cgImage = self.context.createCGImage(skinFilter.outputImage!, from: inImage.extent) else {
-				RUTools.runOnMainThread {
-					self.cameraLayer.contents = nil
-				}
-				return
-			}
-			RUTools.runOnMainThread {
-				self.cameraLayer.contents = cgImage
-				self.cameraLayer.transform = CATransform3DMakeScale(-1, 1, 1)
-			}
-		}
+//		if useSkinFilter {
+//			skinFilter.inputImage = inImage
+//			skinFilter.inputAmount = 0.7.number					// Default = 0.75
+//			skinFilter.inputRadius = 10.number					// Default = 8
+//			skinFilter.inputSharpnessFactor = 0.0.number		// Default = 0.6
+//			guard let cgImage = self.context.createCGImage(skinFilter.outputImage!, from: inImage.extent) else {
+//				RUTools.runOnMainThread {
+//					self.cameraLayer.contents = nil
+//				}
+//				return
+//			}
+//			RUTools.runOnMainThread {
+//				self.cameraLayer.contents = cgImage
+//				self.cameraLayer.transform = CATransform3DMakeScale(-1, 1, 1)
+//			}
+//		}
 		
 		
 		
 		
 		// Update Eye
-		eyeView.updateImage(inImage)
+		faceView.updateImage(inImage)
 	}
 }
 
