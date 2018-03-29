@@ -22,8 +22,6 @@ class CameraView: UIView {
 	
 	@IBOutlet weak var faceView: FaceView!
 	
-	
-	
 	// Capture
 	var captureSession: AVCaptureSession! = nil
 	var captureOutput: AVCaptureVideoDataOutput! = nil
@@ -38,6 +36,9 @@ class CameraView: UIView {
 	// Skin Filter
 	//var skinFilter: YUCIHighPassSkinSmoothing! = nil
 	var context: CIContext! = nil
+	
+	
+	
 	
 	
 	
@@ -83,7 +84,7 @@ class CameraView: UIView {
 		
 		// Input
 		for device in AVCaptureDevice.devices() {
-			if device.hasMediaType(AVMediaType.video) && device.position == AVCaptureDevice.Position.front {
+			if device.hasMediaType(AVMediaType.video) && device.position == AVCaptureDevice.Position.back {
 				do {
 					let deviceInput = try AVCaptureDeviceInput(device: device)
 					if captureSession.canAddInput(deviceInput) {

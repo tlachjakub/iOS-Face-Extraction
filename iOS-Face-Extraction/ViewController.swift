@@ -96,7 +96,7 @@ class ViewController: UIViewController {
 		
 		
 		
-		// Folder for Colors
+		// Folder
 		let folder = RUTools.documentsURL.appendingPathComponent("\(faceNumber)")
 		if !FileManager.default.fileExists(atPath: folder.path) {
 			try? FileManager.default.createDirectory(at: folder, withIntermediateDirectories: true, attributes: nil)

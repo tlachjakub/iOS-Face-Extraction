@@ -8,11 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3D155B5720479F8D00EBAFFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D155B5620479F8D00EBAFFE /* AppDelegate.swift */; };
-		3D155B5920479F8D00EBAFFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D155B5820479F8D00EBAFFE /* ViewController.swift */; };
 		3D155B5C20479F8D00EBAFFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D155B5A20479F8D00EBAFFE /* Main.storyboard */; };
 		3D155B5E20479F8D00EBAFFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D155B5D20479F8D00EBAFFE /* Assets.xcassets */; };
 		3D155B6120479F8D00EBAFFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D155B5F20479F8D00EBAFFE /* LaunchScreen.storyboard */; };
-		3D155B692047B2AF00EBAFFE /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D155B682047B2AF00EBAFFE /* CameraView.swift */; };
 		3D155BEE2047D31D00EBAFFE /* RUTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D155B732047D31D00EBAFFE /* RUTimer.swift */; };
 		3D155BF72047D31D00EBAFFE /* RUNSMutableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D155B7E2047D31D00EBAFFE /* RUNSMutableData.swift */; };
 		3D155BF82047D31D00EBAFFE /* RUExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D155B7F2047D31D00EBAFFE /* RUExtensions.swift */; };
@@ -91,17 +89,17 @@
 		3D155C492047D31D00EBAFFE /* RUImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D155BE92047D31D00EBAFFE /* RUImagePicker.swift */; };
 		3D155C4B2047D31D00EBAFFE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3D155BEB2047D31D00EBAFFE /* README.md */; };
 		3D155C4D2047D88D00EBAFFE /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D155C4C2047D88D00EBAFFE /* FaceView.swift */; };
+		3DCF3F9E204FD299007BE8C4 /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF3F9D204FD299007BE8C4 /* FaceViewController.swift */; };
+		3DCF3FA02050E236007BE8C4 /* kerasFacesModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF3F9F2050E236007BE8C4 /* kerasFacesModel.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D155B5320479F8D00EBAFFE /* iOS-Face-Extraction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Face-Extraction.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D155B5620479F8D00EBAFFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D155B5820479F8D00EBAFFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D155B5B20479F8D00EBAFFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D155B5D20479F8D00EBAFFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D155B6020479F8D00EBAFFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D155B6220479F8D00EBAFFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D155B682047B2AF00EBAFFE /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		3D155B732047D31D00EBAFFE /* RUTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RUTimer.swift; sourceTree = "<group>"; };
 		3D155B7E2047D31D00EBAFFE /* RUNSMutableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RUNSMutableData.swift; sourceTree = "<group>"; };
 		3D155B7F2047D31D00EBAFFE /* RUExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RUExtensions.swift; sourceTree = "<group>"; };
@@ -201,6 +199,8 @@
 		3D155BE92047D31D00EBAFFE /* RUImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RUImagePicker.swift; sourceTree = "<group>"; };
 		3D155BEB2047D31D00EBAFFE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3D155C4C2047D88D00EBAFFE /* FaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		3DCF3F9D204FD299007BE8C4 /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
+		3DCF3F9F2050E236007BE8C4 /* kerasFacesModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = kerasFacesModel.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,10 +235,10 @@
 			isa = PBXGroup;
 			children = (
 				3D155B5620479F8D00EBAFFE /* AppDelegate.swift */,
-				3D155B682047B2AF00EBAFFE /* CameraView.swift */,
+				3DCF3F9D204FD299007BE8C4 /* FaceViewController.swift */,
 				3D155C4C2047D88D00EBAFFE /* FaceView.swift */,
-				3D155B5820479F8D00EBAFFE /* ViewController.swift */,
 				3D155B5A20479F8D00EBAFFE /* Main.storyboard */,
+				3DCF3F9F2050E236007BE8C4 /* kerasFacesModel.mlmodel */,
 				3D155B5D20479F8D00EBAFFE /* Assets.xcassets */,
 				3D155B5F20479F8D00EBAFFE /* LaunchScreen.storyboard */,
 				3D155B6220479F8D00EBAFFE /* Info.plist */,
@@ -486,6 +486,7 @@
 				3D155C252047D31D00EBAFFE /* YUCIBlobsGenerator.m in Sources */,
 				3D155BFC2047D31D00EBAFFE /* RUCIImage.swift in Sources */,
 				3D155C492047D31D00EBAFFE /* RUImagePicker.swift in Sources */,
+				3DCF3F9E204FD299007BE8C4 /* FaceViewController.swift in Sources */,
 				3D155C002047D31D00EBAFFE /* RUImageView.swift in Sources */,
 				3D155C192047D31D00EBAFFE /* RUTools.swift in Sources */,
 				3D155C452047D31D00EBAFFE /* YUCIBilateralFilter.m in Sources */,
@@ -494,7 +495,6 @@
 				3D155C2A2047D31D00EBAFFE /* YUCIHighPass.m in Sources */,
 				3D155C202047D31D00EBAFFE /* RUViewWithXib.swift in Sources */,
 				3D155C322047D31D00EBAFFE /* YUCIReflectedTileROICalculator.m in Sources */,
-				3D155B692047B2AF00EBAFFE /* CameraView.swift in Sources */,
 				3D155C382047D31D00EBAFFE /* YUCIRGBToneCurve.m in Sources */,
 				3D155C472047D31D00EBAFFE /* YUCIStarfieldGenerator.m in Sources */,
 				3D155C362047D31D00EBAFFE /* YUCISkyGenerator.m in Sources */,
@@ -523,7 +523,6 @@
 				3D155BF82047D31D00EBAFFE /* RUExtensions.swift in Sources */,
 				3D155BFB2047D31D00EBAFFE /* RUString.swift in Sources */,
 				3D155C1F2047D31D00EBAFFE /* RUCircularScrollView.swift in Sources */,
-				3D155B5920479F8D00EBAFFE /* ViewController.swift in Sources */,
 				3D155C012047D31D00EBAFFE /* RUTouchView.swift in Sources */,
 				3D155B5720479F8D00EBAFFE /* AppDelegate.swift in Sources */,
 				3D155C4D2047D88D00EBAFFE /* FaceView.swift in Sources */,
@@ -543,6 +542,7 @@
 				3D155C3B2047D31D00EBAFFE /* YUCIReflectedTile.m in Sources */,
 				3D155C352047D31D00EBAFFE /* YUCIUtilities.m in Sources */,
 				3D155C042047D31D00EBAFFE /* RUTableView.swift in Sources */,
+				3DCF3FA02050E236007BE8C4 /* kerasFacesModel.mlmodel in Sources */,
 				3D155BF72047D31D00EBAFFE /* RUNSMutableData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -683,6 +683,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8W8M6CAUQE;
 				INFOPLIST_FILE = "iOS-Face-Extraction/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "RiseUp.iOS-Face-Extraction";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -698,6 +699,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8W8M6CAUQE;
 				INFOPLIST_FILE = "iOS-Face-Extraction/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "RiseUp.iOS-Face-Extraction";
 				PRODUCT_NAME = "$(TARGET_NAME)";
